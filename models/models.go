@@ -20,3 +20,9 @@ type UserProgress struct {
 	Completed    map[int]bool `json:"completed"`     // Map of completed assignments: key is the assignment ID, value is whether it is completed.
 	LastActivity string       `json:"last_activity"` // Timestamp of the user's last activity (e.g., in ISO 8601 format).
 }
+
+// User represents a system user with authentication credentials.
+type User struct {
+	Username string `json:"username"` // Unique username of the user.
+	Password string `json:"password"` // User's password (stored in plain text for mock purposes, should be hashed in production).
+}

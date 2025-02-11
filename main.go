@@ -8,6 +8,7 @@ import (
 func main() {
 	r := gin.Default()
 
+	r.POST("/login", handlers.LoginHandler)
 	r.GET("/courses", handlers.GetCourses)
 	r.GET("/courses/:id", handlers.GetCourseByID)
 	r.GET("/progress/:user_id", handlers.GetUserProgress)

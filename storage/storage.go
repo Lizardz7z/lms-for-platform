@@ -15,3 +15,9 @@ var Assignments = []models.Assignment{
 var UserProgress = map[int]*models.UserProgress{
 	1: {UserID: 1, Completed: map[int]bool{}, LastActivity: ""},
 }
+
+var Users = map[string]models.User{
+	"admin":    {Username: "admin", Password: "password"},
+	"user123":  {Username: "user123", Password: "mypassword"},
+	"testuser": {Username: "testuser", Password: "testpass"},
+}
